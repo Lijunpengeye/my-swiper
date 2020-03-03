@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section id="my-swiper">
+      <div class="swiper-ul">
+        <li class="swiper-li">mySwiper-1</li>
+        <li class="swiper-li">mySwiper-2</li>
+        <li class="swiper-li">mySwiper-3</li>
+        <li class="swiper-li">mySwiper-4</li>
+      </div>
+      <!-- 指示灯 -->
+      <div id="indicator"></div>
+    </section>
+
+    <script src="./index.js"></script>
+    <script>
+      let parameter = {
+        id: "#my-swiper", //整体容器 （轮播+指示灯）
+        wrap: ".swiper-ul", // 轮播容器
+        indicatorShowType: true, //是否显示指示灯
+        indicator: "#indicator", //指示灯 dom id
+        arrow: true, //面板是否显示箭头指向
+        currentColor: "red", //指示灯颜色 默认 red
+        interTime: 3000, //定时播放时间间隔
+        autoPlay: true //自动播放
+      };
+      new mySwiper(parameter);
+    </script>
+  </body>
+</html>
