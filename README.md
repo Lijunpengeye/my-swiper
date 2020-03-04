@@ -1,5 +1,13 @@
 ### 初始化
 
+> 引入样式
+
+```
+import 'kyle-test-carousel/lib/index.css'
+```
+
+> 实例化对象
+
 ```go
 let parameter = {
   id: "#my-swiper", //整体容器 （轮播+指示灯）
